@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="550.0" style="-fx-background-color: #972121;" stylesheets="@regform.css" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.jvrb.java.regform.RegFormController">
+    <Tab style="-fx-text-base-color: #FFFFFF; -fx-background-radius: 10 10 0 0; -fx-padding: 0 0 0 22;" text="INFO">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Pane prefHeight="70.0" prefWidth="550.0" style="-fx-background-color: #9B705F;">
+                <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@form.png" />
+                </ImageView>
+                <VBox alignment="CENTER_LEFT" layoutX="68.0" prefHeight="70.0" prefWidth="400.0">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMULARIO DE REGISTRO">
+                        <font>
+                            <Font name="System Bold" size="21.0" />
+                        </font>
+                    </Text>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenido a nuestra newsletter !">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Text>
+                </VBox>
+            </Pane>
+            <HBox alignment="CENTER_RIGHT" layoutY="325.0" prefHeight="56.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: #5B1414;">
+                <padding>
+                    <Insets right="20.0" />
+                </padding>
+                <Button mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Siguiente" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Cancelar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </HBox>
+            <Pane layoutX="25.0" layoutY="136.0" prefHeight="128.0" prefWidth="128.0" style="-fx-background-color: white; -fx-border-radius: 50%; -fx-background-radius: 50%; -fx-border-color: #5B1414; -fx-border-width: 3;">
+                <ImageView fitHeight="72.0" fitWidth="72.0" layoutX="28.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@news.png" />
+                </ImageView>
+            </Pane>
+            <VBox layoutX="179.0" layoutY="100.0" prefHeight="195.0" prefWidth="340.0" style="-fx-background-color: #791A1A; -fx-background-radius: 20;">
+                <padding>
+                    <Insets left="17.0" top="15.0" />
+                </padding>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="Completa el formulario de registro para">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="suscribirte a nuestra newsletter y recibir las">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="últimas novedades y ofertas exclusivas.">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="Además, por suscribirte entrarás en el sorteo">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="mensual de un cheque de 100€ para gastar en">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="nuestra tienda online.">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Text>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="Pulsa el botón &quot;Siguiente&quot; para iniciar el registro.">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+            </VBox>
+        </AnchorPane>
+    </Tab>
+    <Tab style="-fx-text-base-color: #FFFFFF; -fx-padding: 0 0 0 19; -fx-background-radius: 10 10 0 0;" text="INPUT">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Pane prefHeight="70.0" prefWidth="550.0" style="-fx-background-color: #9B705F;">
+                <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@form.png" />
+                </ImageView>
+                <VBox alignment="CENTER_LEFT" layoutX="68.0" prefHeight="70.0" prefWidth="400.0">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMULARIO DE REGISTRO">
+                        <font>
+                            <Font name="System Bold" size="21.0" />
+                        </font>
+                    </Text>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduce los datos en los campos correspondientes">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Text>
+                </VBox>
+            </Pane>
+            <HBox alignment="CENTER_RIGHT" layoutY="325.0" prefHeight="56.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: #5B1414;">
+                <padding>
+                    <Insets right="20.0" />
+                </padding>
+                <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Atrás" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onNextButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Siguiente" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Cancelar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </HBox>
+            <GridPane hgap="20.0" layoutX="35.0" layoutY="100.0" prefHeight="200.0" prefWidth="480.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Nombre">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Text>
+                    <TextField fx:id="inputName" prefHeight="30.0" style="-fx-background-radius: 0;">
+                        <padding>
+                            <Insets left="7.0" right="7.0" />
+                        </padding>
+                    </TextField>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Apellidos">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Text>
+                    <TextField fx:id="inputSurname" prefHeight="30.0" style="-fx-background-radius: 0;">
+                        <padding>
+                            <Insets left="7.0" right="7.0" />
+                        </padding>
+                    </TextField>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.rowIndex="1">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Correo electrónico">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Text>
+                    <TextField fx:id="inputEmail" prefHeight="30.0" style="-fx-background-radius: 0;">
+                        <padding>
+                            <Insets left="7.0" right="7.0" />
+                        </padding>
+                    </TextField>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" spacing="1.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Teléfono">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Text>
+                    <TextField fx:id="inputTelephone" prefHeight="30.0" style="-fx-background-radius: 0;">
+                        <padding>
+                            <Insets left="7.0" right="7.0" />
+                        </padding>
+                    </TextField>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="País">
+                        <font>
+                            <Font name="System Bold" size="16.0" />
+                        </font>
+                    </Text>
+                    <MenuButton fx:id="selectCountry" mnemonicParsing="false" prefHeight="30.0" prefWidth="230.0" style="-fx-background-color: white; -fx-background-radius: none;" text="Selecciona un país">
+                        <items>
+                            <MenuItem mnemonicParsing="false" onAction="#onMenuItem1Select" text="España" />
+                            <MenuItem mnemonicParsing="false" onAction="#onMenuItem2Select" text="Portugal" />
+                        </items>
+                    </MenuButton>
+                </VBox>
+                <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <CheckBox fx:id="acceptTerms" contentDisplay="CENTER" mnemonicParsing="false" text="Acepto los términos y condiciones" textFill="WHEAT">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <tooltip>
+                        <Tooltip text="Para completar el registro debes marcar esta casilla" />
+                     </tooltip>
+                  </CheckBox>
+               </children></VBox>
+            </GridPane>
+        </AnchorPane>
+    </Tab>
+    <Tab style="-fx-text-base-color: #FFFFFF; -fx-padding: 0 0 0 18; -fx-background-radius: 10 10 0 0;" text="CHECK">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Pane prefHeight="70.0" prefWidth="550.0" style="-fx-background-color: #9B705F;">
+                <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@form.png" />
+                </ImageView>
+                <VBox alignment="CENTER_LEFT" layoutX="68.0" prefHeight="70.0" prefWidth="400.0">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMULARIO DE REGISTRO">
+                        <font>
+                            <Font name="System Bold" size="21.0" />
+                        </font>
+                    </Text>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Comprueba que los datos sean correctos">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Text>
+                </VBox>
+            </Pane>
+            <HBox alignment="CENTER_RIGHT" layoutY="325.0" prefHeight="56.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: #5B1414;">
+                <padding>
+                    <Insets right="20.0" />
+                </padding>
+                <Button mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Atrás" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onSendButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Enviar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Cancelar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </HBox>
+            <GridPane hgap="20.0" layoutX="35.0" layoutY="100.0" prefHeight="200.0" prefWidth="480.0" vgap="20.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <Pane prefHeight="24.0" prefWidth="230.0" style="-fx-background-color: #791A1A;">
+                        <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Nombre">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="28.0" prefWidth="230.0">
+                        <Text fx:id="nameValue" fill="WHITE" layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #791A1A;" />
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                    <Pane prefHeight="24.0" prefWidth="230.0" style="-fx-background-color: #791A1A;">
+                        <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Apellidos">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="28.0" prefWidth="230.0">
+                        <Text fx:id="surnameValue" fill="WHITE" layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #791A1A;" />
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+                    <Pane prefHeight="24.0" prefWidth="230.0" style="-fx-background-color: #791A1A;">
+                        <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Correo electrónico">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="28.0" prefWidth="230.0">
+                        <Text fx:id="emailValue" fill="WHITE" layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #791A1A;" />
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <Pane prefHeight="24.0" prefWidth="230.0" style="-fx-background-color: #791A1A;">
+                        <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="Teléfono">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="28.0" prefWidth="230.0">
+                        <Text fx:id="telephoneValue" fill="WHITE" layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #791A1A;" />
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="2">
+                    <Pane prefHeight="24.0" prefWidth="230.0" style="-fx-background-color: #791A1A;">
+                        <Text layoutX="7.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;" text="País">
+                            <font>
+                                <Font name="System Bold" size="16.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="28.0" prefWidth="230.0">
+                        <Text fx:id="countryValue" fill="WHITE" layoutX="7.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;">
+                            <font>
+                                <Font size="13.0" />
+                            </font>
+                        </Text>
+                    </Pane>
+                    <Pane prefHeight="3.0" prefWidth="230.0" style="-fx-background-color: #791A1A;" />
+                </VBox>
+            </GridPane>
+        </AnchorPane>
+    </Tab>
+    <Tab style="-fx-text-base-color: #FFFFFF; -fx-padding: 0 0 0 16; -fx-background-radius: 10 10 0 0;" text="SUCESS">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <Pane prefHeight="70.0" prefWidth="550.0" style="-fx-background-color: #9B705F;">
+                <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="14.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@form.png" />
+                </ImageView>
+                <VBox alignment="CENTER_LEFT" layoutX="68.0" prefHeight="70.0" prefWidth="400.0">
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="FORMULARIO DE REGISTRO">
+                        <font>
+                            <Font name="System Bold" size="21.0" />
+                        </font>
+                    </Text>
+                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Gracias por suscribirte a nuestra newsletter !">
+                        <font>
+                            <Font name="System Bold" size="14.0" />
+                        </font>
+                    </Text>
+                </VBox>
+            </Pane>
+            <HBox fx:id="successInfo" alignment="CENTER" layoutX="45.0" layoutY="120.0" prefHeight="160.0" prefWidth="460.0" spacing="40.0" visible="false">
+                <VBox prefHeight="160.0" prefWidth="338.0" style="-fx-background-color: #791A1A; -fx-background-radius: 20;">
+                    <padding>
+                        <Insets left="17.0" top="15.0" />
+                    </padding>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="Enhorabuena !">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Text>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="El registro se ha completado con éxito.">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3;">
+                        <font>
+                            <Font size="16.0" />
+                        </font>
+                    </Text>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="En breve recibirás un correo de">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: #F5DEB3; -fx-font-weight: bold;" text="confirmación en tu bandeja de entrada.">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </Text>
+                </VBox>
+                <ImageView fitHeight="96.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                    <Image url="@sucess.png" />
+                </ImageView>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" layoutY="325.0" prefHeight="56.0" prefWidth="550.0" spacing="20.0" style="-fx-background-color: #5B1414;">
+                <padding>
+                    <Insets right="20.0" />
+                </padding>
+                <Button mnemonicParsing="false" onAction="#onFinishButtonClick" prefHeight="30.0" prefWidth="96.0" style="-fx-background-color: #9B705F;" text="Finalizar" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </HBox>
+        </AnchorPane>
+    </Tab>
+</TabPane>

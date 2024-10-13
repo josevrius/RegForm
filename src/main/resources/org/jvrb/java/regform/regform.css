@@ -1,0 +1,32 @@
+.tab-pane > .tab-header-area {
+    -fx-pref-height: 35;
+}
+
+.tab-pane > .tab-header-area .tab-header-background {
+    -fx-background-color: #972121;
+}
+
+.tab-pane > .tab-header-area .tab {
+    -fx-background-color: #5B1414;
+    -fx-pref-width: 70;
+    -fx-pref-height: 22;
+    -fx-font-size: 10;
+    -fx-font-weight: bold;
+}
+
+.tab-pane > .tab-header-area .tab:selected {
+    -fx-pref-height: 27;
+}
+
+.tab-pane > .tab-header-area .focus-indicator {
+    -fx-border-width: 0;
+}
+
+.text-input {
+    -fx-background-color: white;
+}
+
+.check-box > .box {
+    -fx-background-color: white;
+    -fx-background-radius: none;
+}
