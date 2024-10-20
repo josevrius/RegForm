@@ -1,1 +1,1 @@
-Proyecto JavaFX
+Proyecto realizado con JavaFX
